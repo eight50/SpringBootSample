@@ -35,6 +35,10 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	// WebJars dependencies for frontend(JacaScript, CSS and so on) libraries
+	implementation 'org.webjars:jquery:3.5.1'
+	implementation 'org.webjars:bootstrap:5.2.3'
+	implementation 'org.webjars:webjars-locator:0.40' // HTML内で、webjarsのバージョンを書かなくて良い
 }
 
 tasks.named('test') {
